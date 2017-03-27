@@ -542,7 +542,7 @@ body {
   background-size: cover;
   background-attachment: fixed;
   padding: 20px;
-  height: 350px; }
+  height: 500px; }
   .header .navigation .logo {
     margin: 0;
     height: 50px;
@@ -564,19 +564,20 @@ body {
       transition: 0.3s; }
       .header .navigation nav a:hover {
         font-size: 30px; }
-  .header h1 {
+  .header .head-line h1 {
     text-align: center;
-    clear: both;
     color: white;
     letter-spacing: 0.1em;
     text-transform: uppercase;
     font-size: 130px;
     font-family: 'Quicksand', sans-serif;
     text-shadow: 10px 10px 10px black;
-    margin-bottom: 15px; }
-  .header .button {
+    margin: 0px 0px 100px 0px;
+    clear: both;
+    padding-top: 100px; }
+  .header .head-line .button {
     text-align: center; }
-    .header .button a {
+    .header .head-line .button a {
       display: inline-block;
       text-decoration: none;
       font-size: 18px;
@@ -593,22 +594,32 @@ body {
       margin-top: 15px;
       -webkit-box-shadow: 0px 0px 0px 2px white;
               box-shadow: 0px 0px 0px 2px white; }
-      .header .button a:hover {
+      .header .head-line .button a:hover {
         -webkit-box-shadow: 0px 0px 0px 4px black, 0px 0px 0px 7px white;
                 box-shadow: 0px 0px 0px 4px black, 0px 0px 0px 7px white; }
 
-.about-section {
-  margin-bottom: 1100px;
+#about-section {
   text-align: center; }
-  .about-section h1 {
+  #about-section h1 {
     margin: 100px 0px 60px 0px;
     text-align: center;
     color: black; }
-  .about-section .face {
+  #about-section .face {
     height: 200px;
     width: 200px;
     display: inline-block;
     background-image: url(/assets/img/face.jpg);
     background-size: cover;
     -webkit-border-radius: 50%;
-            border-radius: 50%; }
+            border-radius: 50%;
+    margin-bottom: 100px; }
+
+.kontakt-section {
+  background-image: url(/assets/img/ft-bg.jpg);
+  background-size: cover;
+  background-position: center bottom;
+  background-attachment: fixed; }
+  .kontakt-section h1 {
+    padding-top: 100px;
+    text-align: center;
+    color: black; }
