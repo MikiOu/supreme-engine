@@ -1,29 +1,70 @@
 .header
 	background:
-		//image: url(#{$assetPath}/hd-bg.jpg)
-		color: pink
+		image: url(#{$assetPath}/hd-bg.jpg)
+		position: center top
+		size: cover
+		attachment: fixed
 	padding: 20px
-	height: 300px
+	height: 350px
 
-	.logo
-		margin: 0
-		+size(50px)
-		background-color: grey
-		float: left
+	.navigation
 
-	nav
-		list-style: none
-		float: right
+		.logo
+			margin: 0
+			+size(50px)
+			background-color: grey
+			float: left
 
-		a
-			margin-left: 20px
-			text-transform: uppercase
-			font:
-				weight: 400
-				size: 20px
+		nav 
+			list-style: none
+			float: right
+
+			a
+				margin-left: 25px
+				text-transform: uppercase
+				font:
+					weight: 700
+					size: 25px
+				color: white
+				letter-spacing: 0.05em
+				text-shadow: 0px 0px 5px black
+				transition: 0.3s
+
+				&:hover
+					font-size: 30px
 
 	h1
 		text-align: center
 		clear: both
-		margin-top: 300px
+		color: white
+		letter-spacing: 0.1em
+		text-transform: uppercase
+		font:
+			size: 130px
+			family: 'Quicksand', sans-serif
+		text-shadow: 10px 10px 10px black
+		margin-bottom: 15px
+
+	.button
+		text-align: center
+		a
+			display: inline-block
+			text-decoration: none
+			font-size: 18px
+			color: white
+			padding: 1em 2em
+			letter-spacing: 0.1em
+			border-radius: 3px
+			-webkit-transition: all 300ms
+			-moz-transition: all 300ms
+			transition: all 300ms
+			background: black
+			position: relative
+			clear: both
+			margin-top: 15px
+			box-shadow: 0px 0px 0px 2px white 
+
+			&:hover
+				box-shadow: 0px 0px 0px 4px black, 0px 0px 0px 7px white
+
 
