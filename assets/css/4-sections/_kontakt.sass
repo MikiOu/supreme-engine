@@ -1,11 +1,76 @@
+.column3
+	transform: translate(250px, 60px)
+	overflow: hidden
+
+.column2
+	z-index: 2
+	margin-right: 50px
+
+.column1
+	transform: translate(-250px, 60px)
+	margin-right: 50px
+	overflow: hidden
+
 .kontakt-section
-	background:
-		image: url(#{$assetPath}/ft-bg.jpg)
-		size: cover
-		position: center bottom
-		attachment: fixed
+	overflow: hidden
 
 	h1
 		padding-top: 100px
 		text-align: center
 		color: black
+		margin-bottom: 50px
+
+	a
+		color: white
+
+	.container 
+    	display: flex
+    	text-align: center
+    	padding: 0 250px
+    	margin-bottom: 50px
+
+	    .column1,
+	    .column2,
+	    .column3
+	    	flex: 1
+	    	background: black
+	    	text-transform: uppercase
+	    	color: white
+	    	border-radius: 10px
+	    	padding: 1em 2em
+	    	letter-spacing: 0.1em
+	    	font-size: 18px
+	    	transition: all 300ms
+	    	position: relative
+    		display: inline-block
+
+	    	&:hover
+	    		background: #E51B23
+	    		letter-spacing: 0.15em
+
+	    	.column-one
+	    		order: 1
+
+	    	.column-two
+	    		order: 2
+
+	    	.column-three
+	    		order: 3
+
+.dropdown-menu
+    position: relative
+    display: inline-block
+
+.dropdown
+	display: none
+
+
+.column1:hover
+	.dropdown
+		display: block
+		position: absolute
+		background: pink
+
+.margin
+	margin-bottom: 200px
+

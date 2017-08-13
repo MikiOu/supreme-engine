@@ -81,10 +81,11 @@ gulp.task('watch', function() {
  */
 gulp.task('default', ['browser-sync', 'watch']);
 
-var build = require('gulp-build');
- 
-gulp.task('build', function() {
-  gulp.src('scripts/*.js')
-      .pipe(build({ GA_ID: '123456' }))
-      .pipe(gulp.dest('dist'))
+var gulp = require('gulp'),
+   uglify = require('gulp-uglify');
+
+gulp.task('minify', function () {
+   gulp.src('assets/js/functions.js')
+      .pipe(uglify())
+      .pipe(gulp.dest('build'))
 });

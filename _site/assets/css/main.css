@@ -537,17 +537,15 @@ body {
   margin: 0; }
 
 .header {
-  background-image: url(/assets/img/hd-bg.jpg);
+  position: relative;
+  background-image: url(/assets/img/school.jpg);
   background-position: center top;
-  background-size: cover;
   background-attachment: fixed;
+  background-repeat: no-repeat;
   padding: 20px;
-  height: 500px; }
+  overflow: hidden; }
   .header .navigation .logo {
-    margin: 0;
-    height: 50px;
-    width: 50px;
-    background-color: grey;
+    margin: 0 auto;
     float: left; }
   .header .navigation nav {
     list-style: none;
@@ -569,12 +567,12 @@ body {
     color: white;
     letter-spacing: 0.1em;
     text-transform: uppercase;
-    font-size: 130px;
+    font-size: 6em;
     font-family: 'Quicksand', sans-serif;
     text-shadow: 10px 10px 10px black;
     margin: 0 auto;
     clear: both;
-    padding-top: 30px; }
+    padding-top: 15px; }
   .header .head-line .button {
     text-align: center;
     margin-top: 20px; }
@@ -600,27 +598,106 @@ body {
                 box-shadow: 0px 0px 0px 4px black, 0px 0px 0px 7px white; }
 
 #about-section {
-  text-align: center; }
+  text-align: center;
+  padding: 0 250px; }
   #about-section h1 {
     margin: 100px 0px 60px 0px;
     text-align: center;
     color: black; }
-  #about-section .face {
-    height: 200px;
-    width: 200px;
-    display: inline-block;
-    background-image: url(/assets/img/face.jpg);
-    background-size: cover;
-    -webkit-border-radius: 50%;
-            border-radius: 50%;
-    margin-bottom: 100px; }
+  #about-section p {
+    font-size: 24px; }
+
+.column3 {
+  -webkit-transform: translate(250px, 60px);
+      -ms-transform: translate(250px, 60px);
+          transform: translate(250px, 60px);
+  overflow: hidden; }
+
+.column2 {
+  z-index: 2;
+  margin-right: 50px; }
+
+.column1 {
+  -webkit-transform: translate(-250px, 60px);
+      -ms-transform: translate(-250px, 60px);
+          transform: translate(-250px, 60px);
+  margin-right: 50px;
+  overflow: hidden; }
 
 .kontakt-section {
-  background-image: url(/assets/img/ft-bg.jpg);
-  background-size: cover;
-  background-position: center bottom;
-  background-attachment: fixed; }
+  overflow: hidden; }
   .kontakt-section h1 {
     padding-top: 100px;
     text-align: center;
-    color: black; }
+    color: black;
+    margin-bottom: 50px; }
+  .kontakt-section a {
+    color: white; }
+  .kontakt-section .container {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    text-align: center;
+    padding: 0 250px;
+    margin-bottom: 50px; }
+    .kontakt-section .container .column1,
+    .kontakt-section .container .column2,
+    .kontakt-section .container .column3 {
+      -webkit-box-flex: 1;
+      -webkit-flex: 1;
+          -ms-flex: 1;
+              flex: 1;
+      background: black;
+      text-transform: uppercase;
+      color: white;
+      -webkit-border-radius: 10px;
+              border-radius: 10px;
+      padding: 1em 2em;
+      letter-spacing: 0.1em;
+      font-size: 18px;
+      -webkit-transition: all 300ms;
+      transition: all 300ms;
+      position: relative;
+      display: inline-block; }
+      .kontakt-section .container .column1:hover,
+      .kontakt-section .container .column2:hover,
+      .kontakt-section .container .column3:hover {
+        background: #E51B23;
+        letter-spacing: 0.15em; }
+      .kontakt-section .container .column1 .column-one,
+      .kontakt-section .container .column2 .column-one,
+      .kontakt-section .container .column3 .column-one {
+        -webkit-box-ordinal-group: 2;
+        -webkit-order: 1;
+            -ms-flex-order: 1;
+                order: 1; }
+      .kontakt-section .container .column1 .column-two,
+      .kontakt-section .container .column2 .column-two,
+      .kontakt-section .container .column3 .column-two {
+        -webkit-box-ordinal-group: 3;
+        -webkit-order: 2;
+            -ms-flex-order: 2;
+                order: 2; }
+      .kontakt-section .container .column1 .column-three,
+      .kontakt-section .container .column2 .column-three,
+      .kontakt-section .container .column3 .column-three {
+        -webkit-box-ordinal-group: 4;
+        -webkit-order: 3;
+            -ms-flex-order: 3;
+                order: 3; }
+
+.dropdown-menu {
+  position: relative;
+  display: inline-block; }
+
+.dropdown {
+  display: none; }
+
+.column1:hover .dropdown {
+  display: block;
+  position: absolute;
+  background: pink; }
+
+.margin {
+  margin-bottom: 200px; }
